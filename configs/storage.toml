@@ -1,0 +1,20 @@
+# Configuration file for the local data storage
+
+[database]
+    [database.mysql]
+    host = "localhost"
+    port = "3006"
+    user = "root"
+    password = "root"
+    dbname = "chromedb"
+    handler = "mysql.NewConnector"
+
+    [database.redis]
+    host = "127.0.0.1"
+    port = "6379"
+    user = "root"
+    password = "root"
+    dbname = "0"
+    package = "redis"
+
+[file]

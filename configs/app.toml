@@ -1,0 +1,24 @@
+# Common application configuration
+
+[server]
+address = "localhost:9001"
+
+[auth]
+user = "xloo"
+password = "xloo"
+
+[decoder]
+# Decoding strategy. Possible values ["chrome", "edmunds", "hybrid"]
+strategyPrefix = "chrome"
+
+# Decoder read storage -- database, files etc
+[decoder.readStorage]
+type = "database"
+engine = "mysql"
+
+# Decoder write storage -- database, files etc
+[decoder.writeStorage]
+type = "database"
+engine = "mysql"
+
+
